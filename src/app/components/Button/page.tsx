@@ -1,18 +1,27 @@
-import React from 'react'
+"use client";
 
-interface ButtonProps
-{
-    title: string
-}
-function Button({title}: ButtonProps) {
+import React from "react";
+
+interface ButtonProps  {
+  title: string;
+  onClick?: () => void;
+  type?: "button" | "submit" | "reset";
+  className?: string;
+};
+
+export default function Button({
+  title,
+  onClick,
+  type = "button",
+  className = "",
+}: ButtonProps) {
   return (
     <button
-      className="rounded-full cursor-pointer text-black bg-teal-300 px-6 py-4 hover:bg-teal-200 transition font-semibold"
-      title="Start using Nexo"
+      type={type}
+      onClick={onClick}
+      className={`bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 ${className}`}
     >
       {title}
     </button>
   );
 }
-
-export default Button

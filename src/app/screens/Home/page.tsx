@@ -57,7 +57,7 @@ function Home() {
                 </p>
                 <div>
                   <Link href="../../screens/shop">
-                    <Button title="Start Using Nexo" />
+                    <Button className="" type="button" onClick={()=>{}} title="Start Using Nexo" />
                   </Link>
                 </div>
                 <div className="border w-full max-w-md md:max-w-full p-3 rounded-3xl bg-gradient-to-t from-black/40 to-transparent mx-auto md:mx-0">

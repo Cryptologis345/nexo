@@ -391,7 +391,7 @@ function Navbar() {
                 href="../../screens/shop"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <Button title="Start Using Nexo" />
+                <Button onClick={()=>{}}  title="Start Using Nexo" />
               </Link>
             </div>
           </div>
