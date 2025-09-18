@@ -407,7 +407,7 @@ function Navbar() {
       {/* Desktop Dropdown */}
       {openDropdown && (
         <div
-          className="hidden lg:block absolute left-0 w-full h-[60vh] bg-black/70 text-white p-10 flex flex-col space-y-8 animate-fadeIn z-40"
+          className="hidden lg:block absolute  left-0 w-full h-[60vh] bg-black/70 text-white p-10 flex flex-col space-y-8 animate-fadeIn z-40"
           onMouseEnter={() => setOpenDropdown(openDropdown)}
           onMouseLeave={() => setOpenDropdown(null)}
         >
