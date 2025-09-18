@@ -2,7 +2,6 @@ import Navbar from "@/app/components/Navbar/page";
 import Image from "next/image";
 import React from "react";
 import background from "@/app/assets/background.webp";
-import Button from "@/app/components/Button/page";
 import {
   FaBitcoin,
   FaInstagram,
@@ -57,7 +56,12 @@ function Home() {
                 </p>
                 <div>
                   <Link href="../../screens/shop">
-                    <Button className="" type="button" onClick={()=>{}} title="Start Using Nexo" />
+                    <button
+                      className="bg-teal-400 hover:bg-teal-200 p-5 text-black font-bold rounded-full"
+                      title="nexos"
+                    >
+                      Start Using Nexos
+                    </button>
                   </Link>
                 </div>
                 <div className="border w-full max-w-md md:max-w-full p-3 rounded-3xl bg-gradient-to-t from-black/40 to-transparent mx-auto md:mx-0">
@@ -369,7 +373,12 @@ function Home() {
               your account today and get started
             </p>
             <div>
-              <Button title="start usinge nexos" />
+              <button
+                title="start usinge nexos"
+                className="bg-teal-400 text-black hover:bg-teal-200 p-5 font-bold rounded-full"
+              >
+                Start Using Nexos
+              </button>
             </div>
           </div>
         </div>

@@ -21,7 +21,6 @@ import { CgInsights } from "react-icons/cg";
 import { IoIosHelpBuoy } from "react-icons/io";
 import { FaChartBar, FaHandHoldingUsd } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi"; // Import hamburger and close icons
-import Button from "../Button/page";
 import Link from "next/link";
 
 function Navbar() {
@@ -41,7 +40,6 @@ function Navbar() {
           />
         </div>
 
-        {/* Desktop Navigation */}
         <ul className="hidden lg:flex text-white space-x-6 xl:space-x-10 relative">
           <li
             className="cursor-pointer relative"
@@ -68,11 +66,15 @@ function Navbar() {
 
         <div className="hidden lg:block">
           <Link href="../../screens/shop">
-            <Button title="Start Using Nexo" />
+            <button
+              title="Start Using Nexo"
+              className="bg-teal-400 hover:bg-teal-200 p-5 font-bold rounded-full"
+            >
+              Start Using Nexos
+            </button>
           </Link>
         </div>
 
-        {/* Mobile Hamburger Menu */}
         <div className="lg:hidden">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -84,7 +86,6 @@ function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 bg-black bg-opacity-90 z-40 pt-20 px-6 pb-10 overflow-y-auto">
           <div className="flex flex-col space-y-6">
@@ -391,7 +392,12 @@ function Navbar() {
                 href="../../screens/shop"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <Button onClick={()=>{}}  title="Start Using Nexo" />
+                <button
+                  title="nexos "
+                  className="bg-teal-400 hover:bg-teal-200 p-5 font-bold rounded-full"
+                >
+                  Start Using Nexos
+                </button>
               </Link>
             </div>
           </div>
