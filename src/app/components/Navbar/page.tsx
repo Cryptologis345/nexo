@@ -70,7 +70,7 @@ function Navbar() {
               title="Start Using Nexo"
               className="bg-teal-400 hover:bg-teal-200 p-5 font-bold rounded-full"
             >
-              Start Using Nexos
+              Stake Using Nexos
             </button>
           </Link>
         </div>
@@ -396,7 +396,7 @@ function Navbar() {
                   title="nexos "
                   className="bg-teal-400 hover:bg-teal-200 p-5 font-bold rounded-full"
                 >
-                  Start Using Nexos
+                  Stake Using Nexos
                 </button>
               </Link>
             </div>

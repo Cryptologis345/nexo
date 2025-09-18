@@ -60,7 +60,7 @@ function Home() {
                       className="bg-teal-400 hover:bg-teal-200 p-5 text-black font-bold rounded-full"
                       title="nexos"
                     >
-                      Start Using Nexos
+                      Stake Using Nexos
                     </button>
                   </Link>
                 </div>
@@ -377,7 +377,7 @@ function Home() {
                 title="start usinge nexos"
                 className="bg-teal-400 text-black hover:bg-teal-200 p-5 font-bold rounded-full"
               >
-                Start Using Nexos
+                Stake Using Nexos
               </button>
             </div>
           </div>
